@@ -7,5 +7,5 @@ class Player : public Mob
 	void render(sf::RenderWindow*);
 	void update(sf::Time);
 };
-
+// another test
 #endif // PLAYER_H
