@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ShadowzGamesShooter" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ShadowzGamesShooter" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-audio-d" />
+					<Add library="sfml-network-d" />
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-system-d" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ShadowzGamesShooter" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-audio" />
+					<Add library="sfml-network" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-Wall" />
+			<Add directory="include" />
+		</Compiler>
+		<Linker>
+			<Add directory="lib" />
+		</Linker>
+		<Unit filename="src/entities/entity.cpp" />
+		<Unit filename="src/entities/entity.h" />
+		<Unit filename="src/entities/mob.cpp" />
+		<Unit filename="src/entities/mob.h" />
+		<Unit filename="src/game.cpp" />
+		<Unit filename="src/game.h" />
+		<Unit filename="src/levels/level.cpp" />
+		<Unit filename="src/levels/level.h" />
+		<Unit filename="src/levels/levelgen.cpp" />
+		<Unit filename="src/levels/levelgen.h" />
+		<Unit filename="src/levels/tile.cpp" />
+		<Unit filename="src/levels/tile.h" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/states/gamestate.cpp" />
+		<Unit filename="src/states/gamestate.h" />
+		<Unit filename="src/states/introstate.cpp" />
+		<Unit filename="src/states/introstate.h" />
+		<Unit filename="src/states/optionsstate.cpp" />
+		<Unit filename="src/states/optionsstate.h" />
+		<Unit filename="src/states/stagestate.cpp" />
+		<Unit filename="src/states/stagestate.h" />
+		<Unit filename="src/states/state.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
